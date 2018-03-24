@@ -16,5 +16,11 @@
 ![avatar](https://github.com/MockingT/3D_Game-1/blob/master/picture/3d-example3.png)  
 - 测试结果如下图：  
 ![avatar](https://github.com/MockingT/3D_Game-1/blob/master/picture/3d-example2.png)  
-- MonoBehaviour中每个函数的功能和执行时间:  
-- Awake()
+- Awake():当一个脚本被实例化时，Awake 被调用，一般在此函数中初始化变量  
+- Start()：仅在 Update 函数第一次被调用前调用。因为它是在 Awake 之后被调用的，我们可以把一些需要依赖 Awake 的变量放在Start里面初始化  
+- Update()：当开始游戏时，Update 在每一帧被调用一次  
+- LateUpdate()：在Update函数调用后紧接被调用  
+- FixedUpdate()：MonoBehaviour启用时，在每一固定帧被调用  
+- OnEnable()：当对象变为可用或激活状态时此函数被调用  
+- OnDisable()：当对象变为不可用或非激活状态时此函数被调用  
+- OnGUI(): 绘制GUI时候用到，一般在此函数里绘制GUI  
