@@ -29,4 +29,8 @@
 - GameObject: 游戏对象是Unity中的基本对象，它们代表着角色，道具和场景。虽然它们不能单独靠自己组成游戏，但是它们扮演着一种容器的角色，作为能够实现真正功能的组件的容器。  
 - Transform: 这些转换组件决定了游戏中每个对象的位置，旋转和在场景中的比例。每一个游戏对象都有专属的转换组件。  
 - Component: 组件是一个游戏中的各个对象和其行为的细致描述。它们是每个游戏对象中的功能成分。  
-
+#### 4.2 描述下图中table对象(实体)的属性、table的Transform的属性、table的部件 ####  
+![avatar](https://github.com/MockingT/3D_Game-1/blob/master/picture/3d-example4.png)  
+- table对象的属性: table的对象是GameObject，第一个选择框是activeSelf属性。其中tag，layer，Prefab是其三种属性。  
+- table的Transform属性: Position(位置)，Scale(大小)，Rotation(选择角度)  
+- table的部件: 分别为Mesh Filter & Box Collider & Mesh Renderer  
