@@ -33,4 +33,19 @@
 ![avatar](https://github.com/MockingT/3D_Game-1/blob/master/picture/3d-example4.png)  
 - table对象的属性: table的对象是GameObject，第一个选择框是activeSelf属性。其中tag，layer，Prefab是其三种属性。  
 - table的Transform属性: Position(位置)，Scale(大小)，Rotation(选择角度)  
-- table的部件: 分别为Mesh Filter & Box Collider & Mesh Renderer  
+- table的部件: 分别为Mesh Filter & Box Collider & Mesh Renderer  
+### 五. 整理相关学习资料，编写简单代码验证以下技术的实现 ###  
+- 查找对象/添加子对象/遍历对象树/清除所有子对象  
+![avatar](https://github.com/MockingT/3D_Game-1/blob/master/picture/3d-example5.png)  
+### 六. 资源预设（Prefabs）与 对象克隆 (clone) ###  
+- 预设（Prefabs）有什么好处？  
+预设作为组件的集合体 , 预制物体可以实例化成游戏对象，可以重复的创建具有相同结构的游戏对象。并且当组件的属性改变，可以一起改变预设实例化的对象，简化步骤。  
+- 预设与对象克隆 (clone or copy or Instantiate of Unity Object) 关系？  
+克隆游戏对象需要场景中有被克隆对象，而创建预制只需事先创建预制即可，允许场景中一开始并不存在该游戏对象。克隆出来的游戏对象并不会随着被克隆体的变化而发生变化，但是使用预制创建出来的对象会随着预制的改变而发生改变。
+- 制作 table 预制，写一段代码将 table 预制资源实例化成游戏对象  
+![avatar](https://github.com/MockingT/3D_Game-1/blob/master/picture/3d-example6.png)  
+### 七. 尝试解释组合模式（Composite Pattern / 一种设计模式） ###  
+- 组合模式：  
+将对象合成树形结构以表示“部分-整体”的层级结构，组合模式使得用户对单个对象和组合对象的使用具有一致性。  
+- 使用 BroadcastMessage() 方法向子对象发送消息  
+![avatar](https://github.com/MockingT/3D_Game-1/blob/master/picture/3d-example7.png) 
